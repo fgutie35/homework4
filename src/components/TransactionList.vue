@@ -1,5 +1,5 @@
 <script setup>
-    import { defineProps, defineEmits } from 'vue';
+    import {defineProps, defineEmits} from 'vue';
 
     const props = defineProps({
         transactions: {
@@ -11,7 +11,7 @@
     const emit = defineEmits(['transactionDeleted'])
 
     const deleteTransaction = (id) => {
-        emit('transactionDeleted, id')
+        emit('transactionDeleted', id)
 
     }
 
